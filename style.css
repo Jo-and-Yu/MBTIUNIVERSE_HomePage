@@ -14,15 +14,16 @@ body
 }
 header
 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 80px;
+    padding: 15px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10000;
+    z-index: 10000;    
+    background-color: rgba(39, 12, 74, 0.5);
 }
 #logo
 {
