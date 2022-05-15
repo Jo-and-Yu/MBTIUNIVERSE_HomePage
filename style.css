@@ -10,6 +10,7 @@
 body
 {
     min-height: 100vh;
+    position: relative;
     background:linear-gradient(#251055, #c47fd4);
 }
 
@@ -154,18 +155,30 @@ section img#mountains_front
 /* 캐릭터 소개란 */
 .about
 {
-    position: relative;
     padding: 100px;
     background: #120522;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .about h2
 {
     font-size: 3.5em;
-    margin-bottom: 10px;
     color: #fff;
 }
-.about p
+
+.about .swiper-container
 {
-    font-size: 1.2em;
-    color: #fff;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about .swiper-slide
+{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: #fff
 }
