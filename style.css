@@ -207,7 +207,25 @@ section img#mountains_front
     background-size: cover;
     width: 290px;
     height: 330px;
-    background: #120522;;
+    background: #120522;
+}
+.about .looks
+{
+    background-position: center;
+    background-size: cover;
+    width: 180px;
+    height: 185px;
+}
+
+.about .swiper-slide .look .peoplemove
+{
+    background: none;
+} 
+
+.about .swiper-slide .look .lookbase
+{
+    background: #f8e4c3;
+    border-radius: 50%;
 }
 
 .about .swiper-slide .mbti
@@ -233,10 +251,9 @@ section img#mountains_front
 .about .swiper-slide .peoplemove
 {
     position: absolute;
-    background: #120522;;
+    background: #120522;
     width: 100%;
     height: 100%;
-
 }
 
 .about .swiper-slide:active .peoplemove
@@ -251,23 +268,29 @@ section img#mountains_front
 
 .about .swiper-slide .content
 {
-    color: #f2eef8;
+    color: #120522;
     text-align: center;
     margin-top: 45%;
+}
+
+.about .swiper-slide:active .content
+{
+    color: #f2eef8;
 }
 
 .about .face .content
 {
-    color: #f2eef8;
-    text-align: center;
-    margin-top: 50%;
+    margin-top: 55%;
 }
 
 .about .hairs .content
 {
-    color: #f2eef8;
-    text-align: center;
-    margin-top: 45%;
+    margin-top: 35%;
+}
+
+.about .looks .content
+{
+    margin-top: 60%;
 }
 
 .about .v2
