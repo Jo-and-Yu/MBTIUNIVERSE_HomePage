@@ -180,5 +180,31 @@ section img#mountains_front
     background-size: cover;
     width: 335px;
     height: 250px;
-    background: #fff;
+    background: #120522;;
+}
+
+.about .swiper-slide .mbti
+{
+    position: absolute;
+    background: #120522;;
+    width: 100%;
+    height: 100%;
+
+}
+
+.about .swiper-slide:active .mbti
+{
+    top:20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background:#fefefe;
+}
+
+.about .swiper-slide .content
+{
+    color: #f2eef8;
+    text-align: center;
+    margin-top: 30%;
 }
