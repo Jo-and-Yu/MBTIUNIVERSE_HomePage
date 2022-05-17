@@ -167,19 +167,46 @@ section img#mountains_front
     color: #fff;
 }
 
-.about .swiper-container
+.about .swiper-container1
+{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: #fff
+}
+
+.about .swiper-container2
 {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
     color: #fff
 }
+
 .about .swiper-slide
 {
     background-position: center;
     background-size: cover;
-    width: 335px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
+    background: #120522;;
+}
+
+.about .face
+{
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 210px;
+    background: #120522;;
+}
+
+.about .hairs
+{
+    background-position: center;
+    background-size: cover;
+    width: 290px;
+    height: 330px;
     background: #120522;;
 }
 
@@ -202,9 +229,49 @@ section img#mountains_front
     background:#fefefe;
 }
 
+
+.about .swiper-slide .peoplemove
+{
+    position: absolute;
+    background: #120522;;
+    width: 100%;
+    height: 100%;
+
+}
+
+.about .swiper-slide:active .peoplemove
+{
+    top:20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+
 .about .swiper-slide .content
 {
     color: #f2eef8;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 45%;
+}
+
+.about .face .content
+{
+    color: #f2eef8;
+    text-align: center;
+    margin-top: 50%;
+}
+
+.about .hairs .content
+{
+    color: #f2eef8;
+    text-align: center;
+    margin-top: 45%;
+}
+
+.about .v2
+{
+    width: 200px;
+    height: 210px;
 }

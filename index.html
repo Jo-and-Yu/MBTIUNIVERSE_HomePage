@@ -40,9 +40,9 @@
       
      <!-- 캐릭터 소개란 -->
     <div class="about">
+        <!-- MBTI 설명 -->
         <h2>MBTI</h2>
-        <br>
-        <div class="swiper-container">
+        <div class="swiper-container1">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="infp.png" class="mbti">
@@ -72,8 +72,33 @@
         <!-- 페이징 버튼 처리 -->
         <div class="swiper-pagination"></div>
         <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev1"></div>
+        <div class="swiper-button-next1"></div>
+        <br>
+        <!-- PEOPLE 설명 --> 
+        <h2>PEOPLE</h2>
+        <div class="swiper-container2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide face" >
+                    <img src="faces.gif" class="peoplemove">
+                    <div class="content">
+                        <h1>FACE</h1>
+                        <p>얼굴색은 사람과 몬스터가 있다.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide hairs" >
+                    <img src="hairs.gif" class="peoplemove">
+                    <div class="content">
+                        <h1>HAIR</h1>
+                        <p>머리는 길고 짧고 다양함.</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="swiper-button-prev2"></div>
+        <div class="swiper-button-next2"></div>
+        <h2>COMING SOON</h2>
+        <img src="faces.gif" class="v2">
     </div>
 
      <!-- 자바스크립트 -->
@@ -100,7 +125,7 @@
     </script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        const swiper1 = new Swiper('.swiper-container1', {
             // effect: 'coverflow',
             // coverflowEffect: {
             //     rotate: 50,
@@ -118,8 +143,23 @@
             //     type : 'bullets',
             // },
             navigation : {
-            nextEl : '.swiper-button-next',
-            prevEl : '.swiper-button-prev',
+            nextEl : '.swiper-button-next1',
+            prevEl : '.swiper-button-prev1',
+             },
+            // autoplay: {
+            //     deplay: 1000,
+            //     disableOnInteraction: false,
+            // },
+        });
+    </script>
+     <script>
+        const swiper2 = new Swiper('.swiper-container2', {
+            grabCursor: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            navigation : {
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2',
              },
             // autoplay: {
             //     deplay: 1000,
