@@ -4,6 +4,8 @@
     --storybg: #1c0522;
     --aboutbg: #120522;
     --slide: #120522;
+    --roadmapbg: rgb(204, 98, 98);
+    --teambg: rgb(146, 215, 119);
 }
 
 /* 전체 */
@@ -66,8 +68,8 @@ header ul li
 header ul li a:hover,
 header ul li a.active
 {
-background: #fff;
-color: #2b1055;
+    background: #fff;
+    color: #2b1055;
 }
 
 /* 시작 화면 */
@@ -89,7 +91,7 @@ section::before
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #1c0522,transparent);
+    background: linear-gradient(to top, var(--storybg),transparent);
     z-index: 1000;
 }
 section img
@@ -126,11 +128,12 @@ section img#mountains_front
     padding: 8px 30px;
     border-radius: 40px;
     background: #fff;
-    color: #2b1055;
+    color: var(--storybg);
     font-size: 1.5em;
     z-index: 9;
     transform: translateY(100px);
 }
+
 /* 스토리 소개란 */
 .sec
 {
@@ -242,7 +245,6 @@ section img#mountains_front
 {
     margin-top: 35%;
 }
-
 .about .looks
 {
     background-position: center;
@@ -254,7 +256,7 @@ section img#mountains_front
 {
     margin-top: 60%;
 }
-        /* 눈코입 각 이미지 */
+     /* 눈코입 각 이미지 */
 .about .swiper-slide .look .peoplemove
 {
     background: none;
@@ -300,12 +302,44 @@ section img#mountains_front
     width: 80px;
     height: 80px;
     border-radius: 50%;
-
 }
-
      /* v2 이미지 */
 .about .v2
 {
     width: 200px;
     height: 210px;
+}
+
+/* 로드맵(roadmap) */
+.roadmap
+{
+    padding: 100px;
+    background: var(--roadmapbg);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.team .h2
+{
+    font-size: 3.5em;
+    color: #fff;
+}
+
+/* 팀소개(team) */
+.team
+{
+    padding: 100px;
+    background: var(--teambg);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.team .h2
+{
+    font-size: 3.5em;
+    color: #fff;
 }
