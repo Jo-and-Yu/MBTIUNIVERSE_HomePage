@@ -321,10 +321,71 @@ section img#mountains_front
     overflow: hidden;
 }
 
-.team .h2
+.roadmap h2
 {
     font-size: 3.5em;
     color: #fff;
+    text-align: center;
+    margin-bottom: 4.5rem;
+}
+
+.roadmap .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 1.5rem;
+}
+
+.roadmap .box-container .box
+{
+    padding: 1.4rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0.5rem 1.0rem rgb(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+}
+.roadmap .box-container .box:hover
+{
+    cursor:pointer;
+    transform: scale(1.05, 1.05);
+    transition: .5s;
+}
+
+.roadmap .box-container .box h3
+{   
+    font-size: 2.1em;
+    letter-spacing: 0.05em;
+    color: var(--roadmapbg);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.roadmap .box-container .box .content
+{
+    font-size: 1.3em;
+    letter-spacing: 0.09em;
+    margin-bottom: 20px;
+    font-weight: 345;
+}
+
+.roadmap .box-container .box .start
+{
+    font-size: 1.1em;
+    font-weight: 520;
+    letter-spacing: .5em;
+    color: rgb(255, 255, 255);
+   
+    margin-top: 15px;
+    margin-bottom: -5px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 25px;
+    background: var(--roadmapbg);
+    border-radius: 1.6rem;
+    border: .2rem solid rgba(132, 68, 126, 0.2);
 }
 
 /* 팀소개(team) */
@@ -338,7 +399,7 @@ section img#mountains_front
     overflow: hidden;
 }
 
-.team .h2
+.team h2
 {
     font-size: 3.5em;
     color: #fff;
