@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+:root{
+    --storybg: #1c0522;
+    --aboutbg: #120522;
+    --slide: #120522;
+}
+
+/* 전체 */
 *
 {
     margin: 0;
@@ -7,6 +15,7 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+/* body */
 body
 {
     min-height: 100vh;
@@ -47,8 +56,7 @@ header ul li
 {
     list-style: none;
     margin-left: 10px;
-}
-header ul li a
+} header ul li a
 {
     text-decoration: none;
     padding: 6px 15px;
@@ -62,7 +70,7 @@ background: #fff;
 color: #2b1055;
 }
 
-/* 첫 화면 */
+/* 시작 화면 */
 section
 {
     position: relative;
@@ -127,7 +135,7 @@ section img#mountains_front
 .sec
 {
     padding: 100px;
-    background: #1c0522;
+    background: var(--storybg);
     text-align: center;
     overflow: hidden;
 }
@@ -155,7 +163,7 @@ section img#mountains_front
 .about
 {
     padding: 100px;
-    background: #120522;
+    background: var(--aboutbg);
     position: relative;
     justify-content: center;
     align-items: center;
@@ -166,21 +174,22 @@ section img#mountains_front
     font-size: 3.5em;
     color: #fff;
 }
-
-.about .swiper-container1
+    /* 각 슬라이드 설정 */
+.about .swiper-slide:hover 
 {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    color: #fff
+    cursor:pointer;
 }
 
-.about .swiper-container2
+.about .swiper-slide .content
 {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: #fff
+    color: var(--slide);
+    text-align: center;
+    margin-top: 45%;
+}
+
+.about .swiper-slide:active .content
+{
+    color: #f2eef8;
 }
 
 .about .swiper-slide
@@ -189,7 +198,23 @@ section img#mountains_front
     background-size: cover;
     width: 240px;
     height: 240px;
-    background: #120522;;
+    background: var(--slide);
+}
+    /* mbti */
+.about .swiper-container1
+{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: #fff
+}
+    /* v1 */
+.about .swiper-container2
+{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff
 }
 
 .about .face
@@ -198,7 +223,11 @@ section img#mountains_front
     background-size: cover;
     width: 200px;
     height: 210px;
-    background: #120522;;
+    /* background: var(--slide); */
+}
+.about .face .content
+{
+    margin-top: 55%;
 }
 
 .about .hairs
@@ -207,8 +236,13 @@ section img#mountains_front
     background-size: cover;
     width: 290px;
     height: 330px;
-    background: #120522;
+    /* background: var(--slide); */
 }
+.about .hairs .content
+{
+    margin-top: 35%;
+}
+
 .about .looks
 {
     background-position: center;
@@ -216,22 +250,26 @@ section img#mountains_front
     width: 180px;
     height: 185px;
 }
-
+.about .looks .content
+{
+    margin-top: 60%;
+}
+        /* 눈코입 각 이미지 */
 .about .swiper-slide .look .peoplemove
 {
     background: none;
 } 
-
+     /* 눈코입 제일 밑에 이미지 */
 .about .swiper-slide .look .lookbase
 {
     background: #f8e4c3;
     border-radius: 50%;
 }
-
+     /* mbti 각 슬라이드 */
 .about .swiper-slide .mbti
 {
     position: absolute;
-    background: #120522;;
+    /* background: var(--slide); */
     width: 100%;
     height: 100%;
 
@@ -246,12 +284,11 @@ section img#mountains_front
     border-radius: 50%;
     background:#fefefe;
 }
-
-
+     /* v1 각 슬라이드 */
 .about .swiper-slide .peoplemove
 {
     position: absolute;
-    background: #120522;
+    /* background: var(--slide); */
     width: 100%;
     height: 100%;
 }
@@ -266,33 +303,7 @@ section img#mountains_front
 
 }
 
-.about .swiper-slide .content
-{
-    color: #120522;
-    text-align: center;
-    margin-top: 45%;
-}
-
-.about .swiper-slide:active .content
-{
-    color: #f2eef8;
-}
-
-.about .face .content
-{
-    margin-top: 55%;
-}
-
-.about .hairs .content
-{
-    margin-top: 35%;
-}
-
-.about .looks .content
-{
-    margin-top: 60%;
-}
-
+     /* v2 이미지 */
 .about .v2
 {
     width: 200px;

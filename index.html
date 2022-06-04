@@ -9,7 +9,7 @@
 <body>
     <!-- 메뉴바 -->
     <header>
-        <a href="#" class="logo"><img src="logo.png" id="logo"></a>
+        <a href="#" class="logo"><img src="images/logo.png" id="logo"></a>
         <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
@@ -20,39 +20,39 @@
 
      <!-- 시작화면 -->
     <section>
-        <img src="stars.png" id="stars">
-        <img src="moon.png" id="moon">
-        <img src="mountains_behind.png" id="mountains_behind">
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountains_behind">
         <h2 id="text">MBTI UNIVERSE</h2>
         <a href="#sec" id="btn">Explore</a>
-        <img src="mountains_front.png" id="mountains_front">
+        <img src="images/mountains_front.png" id="mountains_front">
     </section>
 
-     <!-- 스토리 소개란 -->
+     <!-- 스토리 소개란(sec) -->
     <div class="sec" id="sec">
         <h2>WELCOME TO MBTI UNIVERSE</h2>
-        <img src="mascot.png" id="mascot">
+        <img src="images/mascot.png" id="mascot">
         <h3>MBTI UNIVERSE에는 10,000개의 MBTI NFT(PFP) 캐릭터들이 당신을 기다리고 있습니다!</h3><br>
         <h3>어떤 MBTI 캐릭터가 당신을 가장 잘 나타내고 있나요?</h3><br>
         <h3>어떤 MBTI 캐릭터가 가장 당신을 끌어당기고 있나요?</h3><br>
         <h3>지금 당장 당신의 MBTI를 선택해주세요!</h3><br>
     </div>
       
-     <!-- 캐릭터 소개란 -->
+     <!-- 캐릭터 소개란(about) -->
     <div class="about">
         <!-- MBTI 설명 -->
         <h2>MBTI</h2>
         <div class="swiper-container1">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="infp.png" class="mbti">
+                    <img src="images/infp.png" class="mbti">
                     <div class="content">
                         <h1>INFP</h1>
                         <p>인프피는 감성적이다.연아는 지훈이를 좋아한다.</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="entj.png" class="mbti">
+                    <img src="images/entj.png" class="mbti">
                     <div class="content">
                         <h1>ENTJ</h1>
                         <p>인티제는 열정적이다.지훈이는 연아를 좋아한다.</p>
@@ -80,14 +80,14 @@
         <div class="swiper-container2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide face" >
-                    <img src="faces.gif" class="peoplemove">
+                    <img src="images/faces.gif" class="peoplemove">
                     <div class="content">
                         <h1>FACE</h1>
                         <p>얼굴색은 사람과 몬스터가 있다.</p>
                     </div>
                 </div>
                 <div class="hairs swiper-slide" >
-                    <img src="hairs.gif" class="peoplemove">
+                    <img src="images/hairs.gif" class="peoplemove">
                     <div class="content">
                         <h1>HAIR</h1>
                         <p>머리는 길고 짧고 다양함.</p>
@@ -95,25 +95,27 @@
                 </div>
                 <div class="swiper-slide looks" >
                     <div class="look">
-                        <img src="eyebrows2.gif" class="peoplemove lookbase">
-                        <img src="eyes2.gif" class="peoplemove">
-                        <img src="lips2.gif" class="peoplemove">
+                        <img src="images/eyebrows2.gif" class="peoplemove lookbase">
+                        <img src="images/eyes2.gif" class="peoplemove">
+                        <img src="images/lips2.gif" class="peoplemove">
                     </div>
                     <div class="content">
                         <h1>LOOK</h1>
-                        <p>표정은 다양하다. </p>
+                        <p>표정은 다양하다.</p>
                     </div>
                 </div>    
             </div>
         </div>
+        <div class="swiper-pagination"></div>
         <div class="swiper-button-prev2"></div>
         <div class="swiper-button-next2"></div>
         <h2>COMING SOON</h2>
         <br>
-        <img src="faces.gif" class="v2">
+        <img src="images/faces.gif" class="v2">
     </div>
 
      <!-- 자바스크립트 -->
+        <!-- 스크롤 이벤트 -->
     <script>
         let stars = document.getElementById('stars');
         let moon = document.getElementById('moon');
@@ -135,6 +137,7 @@
             //header.style.top = value * 0.5 + 'px';
         });
     </script>
+        <!-- 슬라이드1 -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper1 = new Swiper('.swiper-container1', {
@@ -164,6 +167,7 @@
             // },
         });
     </script>
+        <!-- 슬라이드2 -->
      <script>
         const swiper2 = new Swiper('.swiper-container2', {
             grabCursor: true,
