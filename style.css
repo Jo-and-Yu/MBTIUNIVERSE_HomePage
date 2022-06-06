@@ -394,17 +394,25 @@ section img#mountains_front {
 /* 파트너(partner) */
 
 .partnerships {
-  padding: 100px;
+  padding: 40px;
   background: var(--partnerbg);
   position: relative;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
+.partnerships .header {
+  margin-bottom: 15px;
+}
 
-.partnerships-header h2 {
+.partnerships .header h2 {
   text-align: center;
   font-size: 2.5em;
   position: relative;
   color: #fff;
+}
+
+.partnerships .row {
+  display: flex;
+  justify-content: space-around;
 }
