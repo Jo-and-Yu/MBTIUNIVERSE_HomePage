@@ -549,6 +549,7 @@ section img#mountains_front {
         max-width: 350px;
         align-items: flex-start;
         margin: 10px;
+        margin-bottom: 100px;
     }
     .card:hover
     {
@@ -562,9 +563,13 @@ section img#mountains_front {
     }
     .card:hover img
     {
-        top: 68%;
+        top: 70%;
         left: 50%;
         height: 300px;
+    }
+    .utility .cardbox
+    {
+        display:grid;
     }
 }
 @media (max-width: 420px)
@@ -572,5 +577,6 @@ section img#mountains_front {
     .card .content
     {
         padding: 20px;
+        margin-bottom: 100px;
     }
 }
