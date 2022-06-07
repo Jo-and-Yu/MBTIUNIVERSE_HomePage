@@ -22,7 +22,7 @@
 body {
   min-height: 100vh;
   position: relative;
-  background: linear-gradient(#251055, #c47fd4);
+  background: linear-gradient(#18062e, #cd95da);
 }
 
 /* 메뉴바 */
@@ -97,7 +97,7 @@ section img {
   pointer-events: none;
 }
 section img#moon {
-  mix-blend-mode: screen;
+  /* mix-blend-mode: screen; */
 }
 section img#mountains_front {
   z-index: 10;
@@ -502,7 +502,7 @@ section img#mountains_front {
     pointer-events: none;
     transition: 0.5s;
 
-    padding: 1.4rem .3rem;
+    padding: 1.4rem 1.3rem;
     border-radius: 2rem;
     border: 0.2rem solid rgba(79, 56, 111, 0.2);
     box-shadow: -0.7rem 1rem rgb(0, 0, 0, 0.1);
@@ -511,7 +511,7 @@ section img#mountains_front {
 {
     left: 80%;
     height: 400px;
-    padding: .9rem 0;
+    padding: .5rem;
     border: 0.2rem solid rgba(255, 255, 255, 0.4);
 }
 
